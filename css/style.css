@@ -37,14 +37,19 @@ body{
 .align-center{
     align-items: center;
 }
+.sec-spacing{
+    margin-top:80px;
+}
 
 /* BUTTON AND HOVER */
 .btn{
     background-color: var(--blue);
     color: var(--white);
     text-decoration: none;
-    border-radius: 0.25rem;
+    text-align: center;
+    border-radius: 1rem;
     padding: 0.50em 3em;
+    font-size: 0.90em;
 }
 
 
@@ -60,12 +65,14 @@ header{
 .main-menu{
     display: none;
 }
-.main-menu ul li{   
+.main-menu ul li, .main-menu ul li a{   
     text-decoration: none;
     list-style: none;
+    color: var(--white);
 }
 
 /* MAIN */
+/* CARD SECTION */
 #planning, #features, #get-started{
     background-color: var(--purple);
 }
@@ -80,6 +87,52 @@ header{
 .card img{
     width: 50%;
 }
+.card h3{
+    color: var(--blue);
+    padding-bottom: 1em;
+    font-size: 1.35em;
+}
+#c-text1{    
+    text-align: left;
+    padding-bottom: 1.5em;
+}
+.card .c-text{
+    flex-direction: column;
+    justify-content: space-evenly;    
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.card-icon{
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: var(--blue);
+}
+/* PLANNIN SECTION */
+#planning{
+    padding: 0 2rem;
+}
+#planning img{
+    padding: 2.5em 0;
+    width: 100%;
+}
+.p-text{
+    color: var(--white);
+}
+.p-text h3{
+    font-size: 2em;
+    padding: 1em 0;
+}
+.planning .card{
+    background-color: var(--white);
+    color: var(--text-color);
+    margin: 3rem 0;
+    border-radius: 30px;
+}
+.planning .card .c-text h3{
+    color: var(--text-color);
+}
+
+
 
 
 /* FOOTER */
@@ -90,9 +143,31 @@ footer{
 
 /* RESPONSIVE */
 
+/* MOBILE */
+@media screen and (max-width:375px){
+    .container{
+        max-width: 375px;
+    }
+    .card{
+        background-color: var(--azure);
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+        flex-flow: column;
+        align-items: center;
+    }
+    .card img{
+        width: 70%;
+    }
+
+}
+
+/* TABLET e DESKTOP */
+
+
+
 @media screen and (min-width:768px){
     .container{
-        max-width: 750px;
+        max-width: 768px;
     }
     .main-menu{
         display: inherit;
@@ -119,3 +194,5 @@ footer{
     }
     
 }
+
+
