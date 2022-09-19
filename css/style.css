@@ -158,6 +158,9 @@ header{
 }
 
 /* TESTIMONIAL SECTION */
+#testimonials{
+    padding: 0 2rem;
+}
 .t-text{
     flex-direction: column;
     justify-content: space-evenly;    
@@ -167,12 +170,37 @@ header{
 .t-text h2{
     color: var(--purple);    
     margin: 0.80em 0;
-    font-size: 2em;
 }
 .t-text p{
-    font-size: 1.1em;
+    padding-bottom: 2rem;
+
+}
+.testimonials .card{
+    background-color: var(--purple);
+    color: var(--white);    
+    border-radius: 30px;
+}
+.testimonials .card h4{
+    text-transform: uppercase;
+}
+.avatar {
+    /* Rounded border */
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 2em;
 }
 
+.avatar .avatar-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card h4{
+    margin-top: 1.5rem;
+}
 
 
 /* FOOTER */
