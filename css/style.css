@@ -46,11 +46,20 @@ img{
     align-items: center;
     justify-content: center;
 }
+.col{
+    flex-direction: column;
+}
 .align-center{
     align-items: center;
 }
 .sec-spacing{
     margin-top:80px;
+}
+.padding15{
+    padding-bottom: 15px;
+}
+.padding30{
+    padding-bottom: 30px;
 }
 .line-h{
     line-height: 1.5em;
@@ -148,9 +157,6 @@ header{
     padding-top: 2rem;
     width: 100%;
 }
-.planning{
-    padding-bottom: 15px;
-}
 .p-text{
     color: var(--white);
 }
@@ -228,9 +234,6 @@ header{
 .card .f-text{    
     text-align: left;
 }
-.features{
-    padding-bottom: 15px;
-}
 .features .card{
     background-color: var(--white);
     color: var(--lightgray);    
@@ -284,6 +287,50 @@ header{
     top: 0;
     right: 0;
     position: absolute;
+}
+
+/* GET STARTED SECTION */
+#get-started{
+    padding: 0 2rem;
+    color: var(--white);
+    text-align: center;
+}
+#get-started h4{
+    font-weight: lighter;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding-top: 2.5em;
+    opacity: 0.5;
+}
+#get-started h3{
+    padding: 0.75em;
+    font-size: 1.5em;
+}
+#get-started h2{
+    color: var(--alt-text-color);
+    font-size: 3em;
+}
+#get-started p{
+    font-size: 14px;
+    padding: 1.5rem 0;
+}
+#get-started p:last-child{
+    font-size: 0.8em;
+}
+#get-started p a{
+    color: var(--white);
+}
+.btn-started{
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    border-radius: 2rem;
+    padding: 1.2em 4em;
+}
+.dot{
+    font-size: 0.25em;
+    vertical-align: middle;
 }
 /* FOOTER */
 footer{
