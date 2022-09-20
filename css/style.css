@@ -335,8 +335,17 @@ header{
 /* FOOTER */
 footer{
     background-color: var(--dark-not-black);
+    padding: 0 2rem;
+    color: var(--white);
+    text-align: center;
 }
-
+footer p{
+    font-size: 0.8em;
+    padding: 2em 0;
+}
+footer p a{
+    color: var(--purple);
+}
 
 /* RESPONSIVE */
 
