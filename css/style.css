@@ -16,6 +16,7 @@ min-height: 100px;
     --blue: #0084FD;
     --azure: #B5DDFF;
     --purple: #9792E4;
+    --lightgray: #959595;
 
 }
 body{
@@ -27,6 +28,9 @@ button{
     padding: 0;
     border: none;
     background: none;
+}
+img{
+    display: block;
 }
 .container{
     max-width: 600px;
@@ -54,7 +58,15 @@ button{
 .italic{
     font-style: italic;
 }
-
+.white{
+    color: var(--white);
+}
+.purple{
+    color: var(--purple);
+}
+.blue{
+    color: var(--blue);
+}
 /* BUTTON AND HOVER */
 .btn{
     background-color: var(--blue);
@@ -64,6 +76,9 @@ button{
     border-radius: 1rem;
     padding: 0.50em 3em;
     font-size: 0.90em;
+}
+.purple-btn{
+    background-color: var(--purple);
 }
 
 
@@ -75,6 +90,7 @@ header{
     margin-bottom: 50px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 .main-menu{
     display: none;
@@ -86,13 +102,15 @@ header{
 }
 
 /* MAIN */
-/* CARD SECTION */
+
 #planning, #features, #get-started{
     background-color: var(--purple);
 }
 #intro{
     padding: 0 2rem;
 }
+
+/* CARD SECTION */
 .card{
     background-color: var(--azure);
     margin-bottom: 1.5rem;
@@ -121,6 +139,7 @@ header{
     margin-top: 2rem;
     color: var(--blue);
 }
+
 /* PLANNIN SECTION */
 #planning{
     padding: 0 2rem;
@@ -202,6 +221,46 @@ header{
     margin-top: 1.5rem;
 }
 
+/* FEATURES SECTION */
+#features{    
+    padding: 0 2rem;
+}
+.card .f-text{    
+    text-align: left;
+}
+.features{
+    padding-bottom: 15px;
+}
+.features .card{
+    background-color: var(--white);
+    color: var(--lightgray);    
+    border-radius: 30px;
+}
+.features h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 1.5em 0;
+}
+.f-text h1{
+    font-size: 2em;
+}
+.f-text h3{
+    padding: 1rem 0;
+    color: var(--purple);
+}
+.f-text p{
+    margin-bottom: 1.5rem;
+}
+.f-text .btn{  
+    font-size: 0.90em;
+    padding: 0.50em 3em;
+    align-self:flex-start;
+}
+
+/* ABOUT US SECTION */
+#about-us{
+    padding: 0 2rem;
+}
 
 /* FOOTER */
 footer{
