@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Flex Responsive Layout</title>
 </head>
-<body>
+<body class="debug">
     <header class="">
         <div class="container d-flex justify-between align-center">
             <a href="">
@@ -30,20 +30,21 @@
                     <li><a href="">Testimonials</a></li>
                     <li><a href="">Features</a></li>
                     <li><a href="">About Us</a></li>
-                    <li><a href="">Get Started</a></li>
+                    <li><a class="btn fa-money-bill-transfer" href="">Get Started</a></li>
                 </ul>
 
             </nav>
          </div>
     </header>
     <main>
+        <!-- INTRO -->
         <section id="intro">
             <div class="container">
                 <div class="cards">
                     <div class="card d-flex">
                         <div class="c-text d-flex">
                             <h3>Get a demo application</h3>
-                            <p id="c-text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
+                            <p id="c-text1" class="line-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
                             <a class="btn" href=""><i class="fa-brands fa-apple"></i> App Store</a>
                         </div>
                         <img src="./img/phone.png" alt="">
@@ -52,35 +53,36 @@
                         <i class="card-icon fa-solid fa-file-code"></i>
                         <div class="c-text d-flex">
                             <h3>Clean Code</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
+                            <p class="line-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
                         </div>                        
                     </div>
                     <div class="card d-flex">
                         <i class="card-icon fa-solid fa-compass-drafting"></i>
                         <div class="c-text d-flex">
                             <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
+                            <p class="line-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
                         </div>                        
                     </div>
                     <div class="card d-flex">
                         <i class="card-icon fa-solid fa-laptop-code"></i>
                         <div class="c-text d-flex">
                             <h3>Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
+                            <p class="line-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
                         </div>                        
                     </div>
                     <div class="card d-flex">
                         <i class="card-icon fa-solid fa-bullhorn"></i>
                         <div class="c-text d-flex">
                             <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
+                            <p class="line-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro ipsum eius illo ullam aliquid, odit maxime, accusantium, laboriosam eveniet et maiores quasi obcaecati magnam?</p>
                         </div>                        
                     </div>
                 </div>
             </div>
         </section>
+        <!-- PLANNING -->
         <section id="planning" class="sec-spacing" >
-            <div class="container">
+            <div class="container debug">
                 <div class="planning padding15 flex align-center">
                     <img src="./img/planning1.png" alt="">
                     <div class="p-text">
@@ -100,6 +102,7 @@
                 </div>
             </div>
         </section>
+        <!-- TESTIMONIAL -->
         <section id="testimonials" class="sec-spacing" >
             <div class="container">
                 <div class="testimonials">
@@ -138,11 +141,13 @@
                 </div>
             </div>
         </section>
+        <!-- FEATURES -->
         <section id="features" class="sec-spacing" >
             <div class="container">
-                <div class="features padding15">
+                <div class="padding15">
                     <h2 class="white">Benefits of working with us</h2>
-                    <div class="card d-flex">                        
+                    <div class="features">
+                        <div class="card d-flex">                        
                         <div class="c-text f-text d-flex">
                             <h1 class="purple">01</h1>
                             <h3>Hight Quality</h3>
@@ -190,30 +195,35 @@
                             <a class="btn purple-btn" href=""></i>more</a>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
+        <!-- ABOUT US -->
         <section id="about-us" class="sec-spacing" >
-            <div class="about-us">
-                <div class="container">
-                    <h1 class="purple">About Us</h1>
+            <div class="container about-us">
+                    <div class="a-left">
+                        <h1 class="purple">About Us</h1>
                     <p class="line-h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi nobis molestiae, dolor, assumenda amet voluptatum error consequatur quisquam accusamus voluptatibus ad impedit, et magni reiciendis beatae? Et, dolore hic. Sapiente inventore dolorem facilis dolorum nihil distinctio amet debitis aperiam minima sunt, officia illum consequuntur, repellat aut labore quos temporibus veritatis delectus architecto? Perspiciatis praesentium vitae quos, explicabo excepturi magnam!.</p>
     
                     <p class="line-h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor nisi similique nihil id eos, amet consequuntur. Deleniti temporibus ipsa ipsam quas, unde culpa architecto laudantium fugiat iure quos voluptas placeat odio nemo excepturi sit voluptate delectus aliquam. Vel odit minus maiores deleniti quae reiciendis. Adipisci debitis obcaecati aperiam sequi?</p>
+                    </div>
+                    
                     <div class="about-us-avatar">
                         <div class="avatar">
                                 <img class="avatar-image" src="./img/about.jpg" alt="">
                                 <div class="quote purple"><i class="fa-solid fa-quote-left"></i></div>
                         </div>                        
                         <div class="a-text d-flex">                            
-                            <h2 class="purple">I help companies tincidunt torto aliquam nulla facilis cras fermenum odio</h2>
-                        </div>                            
+                            <h2 class="purple">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio</h2>
+                        </div>   
+                        <a class="btn purple-btn" href=""><i class="fa-brands fa-linkedin"></i> Find me on linkedin</a>                         
                     </div>
-                    <a class="btn purple-btn" href=""><i class="fa-brands fa-linkedin"></i> Find me on linkedin</a>
                     
-                </div>
             </div>
         </section>
+        <!-- GET STARTED -->
         <section id="get-started" class="sec-spacing" >
             <div class="container padding30 d-flex center col">
                     <h4>Get started</h4>
